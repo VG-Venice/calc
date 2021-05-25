@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js" integrity="sha512-sIqUEnRn31BgngPmHt2JenzleDDsXwYO+iyvQ46Mw6RL+udAUZj2n/u/PGY80NxRxynO7R9xIGx5LEzw4INWJQ==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="calculator.css">
+<style>
+#main{margin-left: 2.5px;width:99.25%;background-color:none;margin-top: 15px;margin-bottom: 10px;}
+input{width: 101%;height: 60px;font-size: 20px;background-color:green}
+#eee{width:99.5%;height:95px;background-color:
+black;color: cyan;font-size: 35px;border: none;} 
+</style>
+</head>
+<body>
+
+<body bgcolor="black">
+<style>
+p {font-size: x large; font-style: bold; font-family: arial}
+h1 {font-family: "Comic Sans MS"; color:"green"}
+h2 {font-family: "Times New Roman"; font-style:italic;color:"#OOBOFF"}
+h2{margin: 10px 5px 8px 10px}
+h2{border: solid 3px red}
+h4{font-size:24px;font-color: "red"}
+h5{font-size:32px}
+td input{margin-left: -2px;background-color: gray;opacity: 0.7;}
+#whiteKeys{background-color: white;opacity: 1.0;}
+#orangeKeys{background-color: orange;opacity: 0.9;}
+#whitesmkKeys{background-color: whitesmoke;opacity: 0.7;}
+#dodgerbKeys{background-color: dodgerblue;opacity: 0.9;}
+</style>
+
+</div>
+<div id="main">
+<form name="f">
+<input max="10" type="text" name="vvv" placeholder="0" id="eee" disable/>
+<table style="width:100%">
+<tr>
+<td><input id="whiteKeys" type="button" value="1" onclick="f.vvv.value+=1"></td>
+<td><input id="whiteKeys" type="button" value="2" onclick="f.vvv.value+=2"></td>
+<td><input id="whiteKeys" type="button" value="3" onclick="f.vvv.value+=3"></td>
+<td><input id="orangeKeys" type="button" value="+"onclick="add()"></td>
+</tr>
+<tr>
+<td><input id="whiteKeys" type="button" value="4" onclick="f.vvv.value+=4"></td>
+<td><input id="whiteKeys" type="button" value="5" onclick="f.vvv.value+=5"></td>
+<td><input id="whiteKeys" type="button" value="6" onclick="f.vvv.value+=6"></td>
+<td><input id="orangeKeys" type="button"value="-"onclick="sub()"></td>
+</tr>
+<tr>
+<td><input id="whiteKeys" type="button" value="7" onclick="f.vvv.value+=7"></td>
+<td><input id="whiteKeys" type="button" value="8" onclick="f.vvv.value+=8"></td>
+<td><input id="whiteKeys" type="button" value="9" onclick="f.vvv.value+=9"></td>
+<td><input id="orangeKeys" type="button" value="X"onclick="mul()"></td>
+</tr>
+<tr>
+<td><input id="whiteKeys" type="button" value="0" onclick="f.vvv.value+=0"></td>
+<td><input id="whiteKeys" type="button" value="00" onclick="f.vvv.value+='00'"></td>
+<td><input id="orangeKeys" type="button"value="." onclick="f.vvv.value+='.'"></td>
+<td><input id="orangeKeys" type="button" value="/" onclick="di()"></td>
+</tr>
+<tr>
+<td><input id="whiteKeys" type="button" onclick="f.vvv.value=(f.vvv.value)*(f.vvv.value)" value="&#x33A1" >
+</td>
+<td><input id="whiteKeys" type="button" value="&#13221;" onclick="f.vvv.value=(f.vvv.value)*(f.vvv.value)*(f.vvv.value)"></td>
+<td><input id="whitesmkKeys" type="button" value="("  onclick="f.vvv.value+='('"></td>
+<td><input id="whitesmkKeys" type="button" value=")" onclick="f.vvv.value+=')'"></td>
+</tr>
+<tr>
+<td><input id="dodgerbKeys" type="button" value="AC" onclick="f.vvv.value=''"/></td>
+<td><input id="dodgerbKeys" type="button" value="COPY" onclick="copy(), f.vvv.value='Copied!'"></td>
+<td><input class="evalBtn" id="dodgerbKeys" type="button" value="=" onclick="f.vvv.value=eval(f.vvv.value)"></td>
+<td><input id="dodgerbKeys" type="button" value="C" onclick="lastDigit()"></td>
+
+</tr>
+</table>
+
+
+
+
+</form>
+</div>
+<br/>
+<div class="rateBtn">
+<button onclick="rating()" style="height: auto;padding: 20px 500px 20px 500px;margin-left: 5px;" id="rateBtn" class="w3-button w3-red">Rate us Now !!! </button>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>

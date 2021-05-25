@@ -1,0 +1,46 @@
+ @keyframes slideInFromLeft {
+  0% {
+		opacity: 0;
+  }
+	5% {
+		opacity: 0;
+	}
+  10% {
+		opacity: 0.2;
+  }
+  30% {
+		opacity: 0.4;
+  }
+  40% {
+		opacity: 0.6;
+  }
+  70% {
+		opacity: 0.8;
+  }
+  100% {
+		opacity: 1.0;
+  }
+} 
+#main{
+animation-name: slideInFromLeft;
+animation-duration: 5s;
+animation-delay: 0s;
+animation-iteration-count: 1;
+}
+.beforeLoad{
+color: white;
+display: block;
+font-weight: 700;
+}
+
+td input{
+width: 282.5px;
+height: 96px;
+margin: -3px -3px;
+border-radius: 0px ;
+color: black;
+}
+@media screen and (max-width: 992px){
+  float: left;
+  width: 25%;
+}
